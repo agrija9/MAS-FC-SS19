@@ -1,0 +1,73 @@
+What is a class? --> its a template/blueprint
+What is an object? --> its an instance of a class
+Example --> Coke bottles, Car models, humans
+
+OOPS -> concepts that help us in writing structured code that involves creating and mainitaining objects.
+
+
+The four pillars of OOPS:
+	1. Encapsulation
+	2. Abstraction
+	3. Inheritance
+	4. Polymorphism
+
+Benefits of using OOPS:
+	# Adds robustness to the programs --> Encapsulation and abstraction (data cannot be modified unintensionally)
+	# Faster development and easier bugfixing --> Inheritance
+	# Makes the code extensible --> Inheritance
+	# Increases maintainability of the code --> All four concepts
+	# Increases programmers efficiency --> inheritance and polymorphism
+	# Structured and hierarchical code make it much more readable --> All four concepts.
+
+Encapsulation:
+	A student example. Has many properties and behaviors
+	All these properties are packaged together as one single entity so that it becomes easier to manage them
+	Imagine you registering at the university and each of your detail is stored in a different file. Its a very difficult to access all this related data 
+
+Abstraction:
+	A student has many behaviors
+	First is party, then play and maybe if there is still some time then study
+	Abstraction is providing just high level behaviours to the outside world.
+	You can probably tell te student to go party. But you will hide the background steps like get ready, meet up with friends, go to a club and so on.
+
+Inheritance:
+	You get to play the Charles Darwin and define the is-a relations between classes. 
+	Inheritance allows one class to acquire the properties and behaviors of another class.
+	This reduces the burden of rewriting a lot of code.
+	Correct heirarchies must be defined to make the best use of this concepts, otherwise it can lead to redundancies or confusions in the code.
+	Any number of specialized classes can be derived from any class.
+	
+	The example of LivingCreature specialized into animals (with legs) and birds (which may or may not fly)
+	
+Polymorphism:
+	This means that we get different behaviors when calling the same methods.
+	Two types:
+		Compile time -> function overloading
+		run time -> function overriding
+	The simplest example is the Shape class where different shape classes are derived from a base class called shape. All of them implement the function getArea()
+	
+	Example of function overloading --> An adder that can add different number of integers or even strings
+	Example of function overriding --> A living creature and its derived classes that implement different movements in the move() function
+	
+	
+What are interfaces? Example: 
+	Every car provides a fixed set of interfaces like a steering wheel, brakes, horn etc. 
+	Non-standard interfaces like the different built-in music systems in cars make our life hard.
+What are abstract classes?
+	Classes that implement and contain some behaviors and properties, but not all.
+	Partially complete classes
+	
+
+What is association? --> two classes need to communicate with each other (simply a line with optional arrow between two classes)
+
+What is composition?
+What is aggregation?
+Both above cases are situations where an object owns another object. There is a slight difference though. 
+In aggregation, the child can exist without the parent. Ex:  A student can exist without a class, a dog can exist without a owner etc.
+Aggregation does not explicitly say that an object owns another object. It simply says that, an object is not the sole owner of another object.
+In composition, the child cannot exist without the parent. Ex: A room cannot exist without a house, handls legs and head cannot exists without a person.
+Deleting the parent also deletes the children in compositiin but not in aggregation
+
+What is generalization/Specialization?
+Generalization --> combining similar properties into a more general class
+Specialization --> creating new specialized classes from an existing class
