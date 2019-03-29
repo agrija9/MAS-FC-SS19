@@ -3,6 +3,7 @@
 using namespace std;
 
 // This code will compute the sum of first 'n' natural numbers.
+// Assume that we need to set the sum to the first natural number if user enters n = 0;
 int main()
 {
     int n;
@@ -15,19 +16,16 @@ int main()
     int naturalNum = 1;
 
     /*
-    A while does not take care of the initialization of the control variable or its update.
-    It simply checks if the control condition is true to decide if it should start the iteration.
-    The condition is checked at the START of each iteraion.
-    The developer is responsible for correctly updating the control variable.
-    An infinite loop can be written using while (true) since the control statement will never evaluate to false.
+    A do-while loop is similar to the while loop, except that the control condition is checked AFTER each iteration.
+    This mean the loop's code will be executed atleast once irrespective of the control condition.
     */
-    while (naturalNum <= n)
+    do
     {
         sum = sum + naturalNum;
 
         // Update the control variable
         naturalNum++;
-    }
+    } while (naturalNum <= n); // we need a semi-colon here for a do-while loop
 
     cout << "The sum of first " << n << " natural numbers = " << sum << endl;
 
